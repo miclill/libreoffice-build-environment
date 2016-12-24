@@ -8,8 +8,6 @@ What does it provide?
 
 This docker container provides all the stuff I needed to build LibreOffice from its git source, but may also be used for other development needs. It is based on Debian Stretch.
 
-Pull requests are wellcome!
-
 Installation
 ===============
 
@@ -21,3 +19,8 @@ Create and start a new container from the image:
 ```bash
 docker run -it --name lodev --storage-opt size=30G mkara/libreoffice-build-environment
 ```
+
+Contributing
+===============
+
+Pull requests are wellcome!
