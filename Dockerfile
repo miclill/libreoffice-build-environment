@@ -11,7 +11,7 @@ RUN apt-get -y install apt-utils \
 && apt-get -y upgrade
 
 # Install essential packages and build tools
-RUN apt-get -y install build-essential git libkrb5-dev graphviz
+RUN apt-get -y install build-essential git libkrb5-dev graphviz wget vim
 
 # Install LibreOffice dependencies
 RUN apt-get -y build-dep libreoffice
