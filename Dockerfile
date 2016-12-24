@@ -1,15 +1,20 @@
-FROM debian:latest
+FROM debian:stretch
 
 MAINTAINER Muhammet Kara <muhammetk@gmail.com>
 
-# update software repos
+# Add source list for apt (needed for build-dep)
+ADD sources.list /etc/apt/sources.list
+# Update software repos
 RUN apt-get update
-# ugrade software
-RUN apt-get -y upgrade
+# Ugrade software
+RUN apt-get -y install apt-utils \
+&& apt-get -y upgrade
 
-# Install essential build tools and dependencies
-RUN apt-get install -y apt-utils \
-&& apt-get install -y build-essential git libkrb5-dev
+# Install essential packages and build tools
+RUN apt-get -y install build-essential git libkrb5-dev graphviz
+
+# Install LibreOffice dependencies
+RUN apt-get -y build-dep libreoffice
 
 # Purge apt-get cache
 RUN rm -rf /var/lib/apt/lists/*
