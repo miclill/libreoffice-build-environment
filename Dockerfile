@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM debian:testing
 
 MAINTAINER Muhammet Kara <muhammetk@gmail.com>
 

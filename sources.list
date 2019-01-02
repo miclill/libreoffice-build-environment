@@ -1,9 +1,9 @@
-# Debian stretch source list
-deb http://httpredir.debian.org/debian stretch main
-deb-src http://httpredir.debian.org/debian stretch main
+# Debian testing source list
+deb http://httpredir.debian.org/debian testing main
+deb-src http://httpredir.debian.org/debian testing main
 
-deb http://httpredir.debian.org/debian stretch-updates main
-deb-src http://httpredir.debian.org/debian stretch-updates main
+deb http://httpredir.debian.org/debian testing-updates main
+deb-src http://httpredir.debian.org/debian testing-updates main
 
-deb http://security.debian.org/ stretch/updates main
-deb-src http://security.debian.org/ stretch/updates main
+deb http://security.debian.org/ testing/updates main
+deb-src http://security.debian.org/ testing/updates main
